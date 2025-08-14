@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    padding: 40px 0;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #ff7043;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+form {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 32px 28px 24px 28px;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(255, 112, 67, 0.10), 0 1.5px 6px rgba(0, 0, 0, 0.06);
+    gap: 16px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 7px;
+    border: 1.5px solid #ffab91;
+    background: #fff8f6;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff7043;
+    outline: none;
+    background: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 220px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.05rem;
+    align-items: center;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+    gap: 7px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;
+    font-weight: 400;
+    color: #444;
+    font-size: 1rem;
+
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    display: flex;
+    accent-color: #ff7043;
+    width: fit-content;
+}
+
+button {
+    background: linear-gradient(90deg, #ff7043 60%, #ffab91 100%);
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 28px;
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(255, 112, 67, 0.10);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff5722 60%, #ff7043 100%);
+    box-shadow: 0 4px 16px rgba(255, 112, 67, 0.15);
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0.5px;
+}
+
+.invalid {
+    border-color: #ff0000 !important; /* เปลี่ยนสีเส้นกรอบเป็นสีแดง */
+    background: #fff5f5; /* เพิ่มพื้นหลังสีชมพูอ่อนๆ */
+}
+
+/* For error messages */
+.error-message {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: flex; 
+    flex-direction: column;
+}
+
+/* For groups with errors */
+.invalid-group label {
+    color: #ff4d4d;
+    display: flex;
+}
+
+/* To correct the placement of the radio group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}

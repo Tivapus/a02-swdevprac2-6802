@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มแจ้งความสนใจรับอุปการะสุนัข</title>
+    <link rel="stylesheet" href="adoptme.css">
+    <script src="adoptme.js"></script>
+</head>
+<body>
+
+    <h1>แบบฟอร์มแจ้งความสนใจรับอุปการะสุนัข</h1>
+
+    <form action="#" method="post" onsubmit="return validateForm()">
+        <label for="fullname">ชื่อ – นามสกุล</label>
+        <input type="text" id="fullname" name="fullname" >
+
+        <label for="phone">เบอร์ติดต่อ</label>
+        <input type="tel" id="phone" name="phone" >
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" >
+
+        <label for="address">ที่อยู่</label>
+        <textarea id="address" name="address" rows="3" ></textarea>
+
+        <label for="housing">ลักษณะที่พักอาศัย</label>
+        <select id="housing" name="housing" >
+            <option value="">-- กรุณาเลือก --</option>
+            <option value="บ้านสวน">บ้านสวน</option>
+            <option value="บ้านเดี่ยว">บ้านเดี่ยว</option>
+            <option value="บ้านทาวน์โฮม">บ้านทาวน์โฮม</option>
+            <option value="คอนโดมิเนียม/หอพัก">คอนโดมิเนียม/หอพัก</option>
+        </select>
+
+        <div class="form-group">
+            <label class="form-label">การเลี้ยงสุนัข</label>
+            <div class="radio-group">
+                <input type="radio" name="dog_place" id="indoor" >
+                <label for="indoor">
+                    เลี้ยงสุนัขภายในบ้าน
+                </label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="dog_place" id="outdoor" value="ภายนอกบ้าน">
+                <label for="outdoor">
+                    เลี้ยงสุนัขภายนอกบ้าน
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน</label>
+            <input type="number" id="pet_count" name="pet_count" min="0">
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" name="agreement" id="agreement" >
+            <label for="agreement" required>
+                การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองการได้รับอุปการะสุนัข
+            </label>
+        </div>
+        <button type="submit">ส่งแบบฟอร์ม</button>
+    </form>
+
+    <footer>
+        <p>6532175121 Supavit Janesawatpong</p>
+    </footer>
+
+</body>
+</html>
